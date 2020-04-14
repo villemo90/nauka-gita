@@ -5,6 +5,7 @@ body {
   margin: auto;
   background-image: url("https://www.classicpopmag.com/wp-content/uploads/2020/01/DD00002-R1-04-5-scaled-e1580124083345.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main_content {
