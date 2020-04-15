@@ -9,12 +9,13 @@ body {
 }
 
 .main_content {
-  display: flex;
   margin-top: 50px;
   padding: 80px 200px;
   text-align: center;
   background: black;
   opacity: 0.8;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 
@@ -22,6 +23,7 @@ header h1 {
   font-size: 40px;
   margin-top: 0;
   color: rgb(137, 207, 240);
+  display: -ms-flexbox;
   display: flex;
 }
 

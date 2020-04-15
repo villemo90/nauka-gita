@@ -1,0 +1,48 @@
+/* >>> html-validate <<< */
+node_modules/.bin/html-validate html-validate index.html
+
+/* in index.html */
+<p>
+  Don't ask me
+  What you know is true
+  Don't have to tell you
+  I love your precious heart
+  <br
+  <br>
+  (...)
+</p>
+
+/* out command line*/
+
+index.html
+  20:9  error  failed to tokenize "<br>\n     ...", expected attribute, ">" or "/>"  parser-error
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+
+/* >>> autoprefixer.css <<< */
+
+node_modules/.bin/autoprefixer-cli -o main.prefixer.css style.css
+
+/* in style.css */
+
+.main_content {
+  display: flex;
+  margin-top: 50px;
+  padding: 80px 200px;
+  text-align: center;
+  background: black;
+  opacity: 0.8;
+}
+/* out main.prefixer.css */
+
+.main_content {
+  margin-top: 50px;
+  padding: 80px 200px;
+  text-align: center;
+  background: black;
+  opacity: 0.8;
+  display: -ms-flexbox;
+  display: flex;
+}
